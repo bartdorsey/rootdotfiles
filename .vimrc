@@ -39,7 +39,7 @@ set colorcolumn=80
 set cursorline
 set syntax=on
 
-set mapleader=" "
+set g:mapleader=" "
 
 " keep cursor always centered
 augroup VCenterCursor
