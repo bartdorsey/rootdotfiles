@@ -39,9 +39,15 @@ set colorcolumn=80
 set cursorline
 set syntax=on
 
+set mapleader=" "
+
 " keep cursor always centered
 augroup VCenterCursor
   au!
   au BufEnter,WinEnter,WinNew,VimResized *,*.*
         \ let &scrolloff=winheight(win_getid())/2
 augroup END
+
+" Mappings
+vmap <leader>y :Oscyank<cr>
+
